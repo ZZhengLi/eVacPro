@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "598495008",
+    "project_id": "seniorproject2021-2",
+    "storage_bucket": "seniorproject2021-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598495008:android:0651d784572d418d6d9145",
+        "android_client_info": {
+          "package_name": "com.seniorproject.vaccinationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598495008-f8up28gb1bcpqo7h8amp5sasqo86j8va.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7HZT60bgNIaPl8V2iTg2eIrQ2kxH9Xcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598495008-f8up28gb1bcpqo7h8amp5sasqo86j8va.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

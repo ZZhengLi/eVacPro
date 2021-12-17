@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>598495008-0a1ohtlgnbtgs5nij0hl8d8e7e3i663j.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.598495008-0a1ohtlgnbtgs5nij0hl8d8e7e3i663j</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDGOJmBR29ppHDagGHxTnp0xtHv829Ak2A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>598495008</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.seniorproject.vaccinationapp</string>
+	<key>PROJECT_ID</key>
+	<string>seniorproject2021-2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>seniorproject2021-2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:598495008:ios:e0541a27d4e28c706d9145</string>
+</dict>
+</plist>
