@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:vaccination_hospital/add_vaccine.dart';
 
 import 'package:vaccination_hospital/patient_info.dart';
@@ -90,6 +91,11 @@ class _VaccineDataState extends State<VaccineData> {
                           .map((data) => InkWell(
                                 child: Card(
                                   child: ListTile(
+                                    leading: SvgPicture.asset(
+                                        "assets/icons/vaccines.svg",
+                                        color: Colors.blue,
+                                        height: 50,
+                                        semanticsLabel: 'vaccines icon'),
                                     title: Text(data["name"],
                                         style: const TextStyle(
                                           fontSize: 20,

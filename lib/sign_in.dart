@@ -21,65 +21,75 @@ class SignIn extends StatelessWidget {
         child: Scaffold(
           resizeToAvoidBottomInset: false,
           backgroundColor: Colors.blue,
-          body: Center(
-            child:
-                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              SvgPicture.asset("assets/icons/vaccines.svg",
-                  color: Colors.white,
-                  height: 50,
-                  semanticsLabel: 'vaccines icon'),
-              const Text("Vaccinations Pro",
-                  style: TextStyle(
+          body: Stack(children: [
+            Center(
+              child: Container(
+                padding: EdgeInsets.only(top: 0.25 * height),
+                child: Column(children: [
+                  SvgPicture.asset("assets/icons/vaccines.svg",
                       color: Colors.white,
-                      fontSize: 25,
-                      fontWeight: FontWeight.w500)),
-              const SizedBox(height: 30),
-              const Text(
-                "PASSWORD",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                    letterSpacing: 2),
+                      height: 50,
+                      semanticsLabel: 'vaccines icon'),
+                  const Text("Vaccinations Pro",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w500))
+                ]),
               ),
-              const SizedBox(height: 10),
-              Form(
-                key: _formKey,
-                child: SizedBox(
-                  width: 0.7 * width,
-                  child: TextFormField(
-                    style: const TextStyle(fontSize: 14),
-                    obscureText: true,
-                    decoration: InputDecoration(
-                        fillColor: Colors.white,
-                        filled: true,
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(5),
-                            borderSide: BorderSide.none)),
-                    onSaved: (password) => _password = password!,
-                    onFieldSubmitted: (v) async {
-                      await signInMethod(context);
-                    },
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 0.2 * width,
-                //Sign in button
-                child: ElevatedButton(
-                    style: ButtonStyle(
-                        elevation: MaterialStateProperty.all(0),
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.blue[900]),
-                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5)))),
-                    onPressed: () async {
-                      await signInMethod(context);
-                    },
-                    child: const Text("Sign In")),
-              ),
-            ]),
-          ),
+            ),
+            Center(
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text(
+                      "PASSWORD",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                          letterSpacing: 2),
+                    ),
+                    const SizedBox(height: 10),
+                    Form(
+                      key: _formKey,
+                      child: SizedBox(
+                        width: 0.7 * width,
+                        child: TextFormField(
+                          style: const TextStyle(fontSize: 14),
+                          obscureText: true,
+                          decoration: InputDecoration(
+                              fillColor: Colors.white,
+                              filled: true,
+                              border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(5),
+                                  borderSide: BorderSide.none)),
+                          onSaved: (password) => _password = password!,
+                          onFieldSubmitted: (v) async {
+                            await signInMethod(context);
+                          },
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    SizedBox(
+                      width: 0.2 * width,
+                      //Sign in button
+                      child: ElevatedButton(
+                          style: ButtonStyle(
+                              elevation: MaterialStateProperty.all(0),
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.blue[900]),
+                              shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(5)))),
+                          onPressed: () async {
+                            await signInMethod(context);
+                          },
+                          child: const Text("Sign In")),
+                    ),
+                  ]),
+            ),
+          ]),
         ));
   }
 
