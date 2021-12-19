@@ -102,11 +102,11 @@ class SignIn extends StatelessWidget {
       try {
         await FirebaseAuth.instance.signInWithEmailAndPassword(
             email: "admin@admin.com", password: _password);
-        EasyLoading.dismiss();
         Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (context) {
           return const Home();
         }));
+        EasyLoading.dismiss();
       } catch (e) {
         EasyLoading.showError(e.toString());
       }

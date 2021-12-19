@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:vaccination_hospital/add_vaccine.dart';
-
-import 'package:vaccination_hospital/patient_info.dart';
 import 'package:vaccination_hospital/vaccine_info.dart';
 
 class VaccineData extends StatefulWidget {
@@ -81,6 +79,7 @@ class _VaccineDataState extends State<VaccineData> {
                   if (snapshot.connectionState == ConnectionState.waiting) {
                     return const Text("Loading");
                   }
+                  EasyLoading.dismiss();
                   return Column(
                     children: [
                       ...snapshot.data!.docs

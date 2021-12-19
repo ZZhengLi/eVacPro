@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:vaccination_hospital/patient_list.dart';
 import 'package:vaccination_hospital/scanner.dart';
@@ -86,6 +87,8 @@ class Home extends StatelessWidget {
                             ),
                             child: InkWell(
                               onTap: () {
+                                EasyLoading.show(
+                                    maskType: EasyLoadingMaskType.black);
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
@@ -115,6 +118,8 @@ class Home extends StatelessWidget {
                             ),
                             child: InkWell(
                               onTap: () {
+                                EasyLoading.show(
+                                    maskType: EasyLoadingMaskType.black);
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(

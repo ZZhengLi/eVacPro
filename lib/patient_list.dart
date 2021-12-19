@@ -67,6 +67,7 @@ class _PatientListState extends State<PatientList> {
                   if (snapshot.connectionState == ConnectionState.waiting) {
                     return const Text("Loading");
                   }
+                  EasyLoading.dismiss();
                   return Column(
                     children: [
                       ...snapshot.data!.docs
