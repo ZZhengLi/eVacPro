@@ -2,8 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:vaccination_hospital/add_vaccine.dart';
-import 'package:vaccination_hospital/vaccine_info.dart';
+import 'package:vaccination_pro/add_vaccine.dart';
+import 'package:vaccination_pro/vaccine_info.dart';
 
 class VaccineData extends StatefulWidget {
   VaccineData({Key? key}) : super(key: key);

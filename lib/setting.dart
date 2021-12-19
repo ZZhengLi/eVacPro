@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:vaccination_hospital/reset_password.dart';
-import 'package:vaccination_hospital/sign_in.dart';
+import 'package:vaccination_pro/reset_password.dart';
+import 'package:vaccination_pro/sign_in.dart';
 
 class Setting extends StatelessWidget {
   const Setting({Key? key}) : super(key: key);

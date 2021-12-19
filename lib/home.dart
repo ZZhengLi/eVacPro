@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:vaccination_hospital/patient_list.dart';
-import 'package:vaccination_hospital/scanner.dart';
-import 'package:vaccination_hospital/setting.dart';
-import 'package:vaccination_hospital/vaccine_data.dart';
-import 'package:vaccination_hospital/vaccine_qr_code.dart';
+import 'package:vaccination_pro/patient_list.dart';
+import 'package:vaccination_pro/scanner.dart';
+import 'package:vaccination_pro/setting.dart';
+import 'package:vaccination_pro/vaccine_data.dart';
+import 'package:vaccination_pro/vaccine_qr_code.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);

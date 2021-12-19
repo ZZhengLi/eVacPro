@@ -4,7 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
-import 'package:vaccination_hospital/patient_info.dart';
+import 'package:vaccination_pro/patient_info.dart';
 
 class PatientList extends StatefulWidget {
   PatientList({Key? key}) : super(key: key);

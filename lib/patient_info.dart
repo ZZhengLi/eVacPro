@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:vaccination_hospital/check_appointment.dart';
+import 'package:vaccination_pro/check_appointment.dart';
 
 class PatientInfo extends StatelessWidget {
   final data;

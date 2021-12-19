@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:vaccination_hospital/home.dart';
+import 'package:vaccination_pro/home.dart';
 
 class SignIn extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();

@@ -1,4 +1,4 @@
-package com.seniorproject.vaccinationapp
+package com.seniorproject.vaccinationpro
 
 import io.flutter.embedding.android.FlutterActivity
 

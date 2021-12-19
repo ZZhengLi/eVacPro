@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:vaccination_hospital/sign_in.dart';
+import 'package:vaccination_pro/sign_in.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
