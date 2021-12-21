@@ -1,9 +1,11 @@
 import 'dart:developer';
 import 'dart:io';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:vaccination_pro/patient_info.dart';
 
 class Scanner extends StatefulWidget {
   const Scanner({Key? key}) : super(key: key);
@@ -17,6 +19,7 @@ class _ScannerState extends State<Scanner> {
   Barcode? result;
   QRViewController? controller;
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
+  var user;
 
   // In order to get hot reload to work we need to pause the camera if the platform
   // is android, or resume the camera if the platform is iOS.
@@ -123,11 +126,26 @@ class _ScannerState extends State<Scanner> {
       setState(() {
         result = scanData;
       });
+      controller.pauseCamera();
       if (await canLaunch(result!.code.toString())) {
         await launch(result!.code.toString(),
             forceSafariVC: true, forceWebView: true, enableJavaScript: true);
       } else {
-        throw 'Could not launch ${result!.code.toString()}';
+        user = await FirebaseFirestore.instance
+            .doc("Users/${result!.code.toString()}")
+            .get();
+        if (user.exists) {
+          await FirebaseFirestore.instance
+              .doc("Users/${result!.code.toString()}")
+              .get()
+              .then((data) {
+            Navigator.pop(context);
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => PatientInfo(data: data)));
+          });
+        }
       }
     });
   }

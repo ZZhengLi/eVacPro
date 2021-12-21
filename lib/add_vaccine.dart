@@ -198,7 +198,7 @@ class AddVaccine extends StatelessWidget {
                                   Timestamp.fromDate(_manufactureDate)
                             });
                             EasyLoading.showSuccess(
-                                "New vaccine added Successfully!");
+                                "New vaccine added successfully!");
                             Navigator.pop(context);
                             Navigator.pushReplacement(
                                 context,

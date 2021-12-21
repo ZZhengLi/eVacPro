@@ -5,7 +5,7 @@ import 'package:vaccination_pro/check_appointment.dart';
 class PatientInfo extends StatelessWidget {
   final data;
   const PatientInfo(
-      {Key? key, required QueryDocumentSnapshot<Object?> this.data})
+      {Key? key, required DocumentSnapshot<Object?> this.data})
       : super(key: key);
 
   @override

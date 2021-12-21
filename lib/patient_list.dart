@@ -71,10 +71,14 @@ class _PatientListState extends State<PatientList> {
                   return Column(
                     children: [
                       ...snapshot.data!.docs
-                          .where((element) => element["displayName"]
-                              .toString()
-                              .toLowerCase()
-                              .contains(_searchController.text.toLowerCase()))
+                          .where((element) =>
+                              element["displayName"]
+                                  .toString()
+                                  .toLowerCase()
+                                  .contains(
+                                      _searchController.text.toLowerCase()) ||
+                              element["id"].toString().toLowerCase().contains(
+                                  _searchController.text.toLowerCase()))
                           .map((data) => InkWell(
                                 child: Card(
                                   child: ListTile(

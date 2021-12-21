@@ -143,35 +143,35 @@ class Home extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => const VaccineQrCode(),
-                                  ),
-                                );
-                              },
-                              splashColor: Colors.blue,
-                              child: Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
-                                    Icon(
-                                      Icons.qr_code,
-                                      size: 70,
-                                      color: Colors.blue,
-                                    ),
-                                    Text("Vaccine QrCode"),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
+                          // Card(
+                          //   shape: RoundedRectangleBorder(
+                          //     borderRadius: BorderRadius.circular(20),
+                          //   ),
+                          //   child: InkWell(
+                          //     onTap: () {
+                          //       Navigator.push(
+                          //         context,
+                          //         MaterialPageRoute(
+                          //           builder: (context) => VaccineQrCode(),
+                          //         ),
+                          //       );
+                          //     },
+                          //     splashColor: Colors.blue,
+                          //     child: Center(
+                          //       child: Column(
+                          //         mainAxisAlignment: MainAxisAlignment.center,
+                          //         children: const [
+                          //           Icon(
+                          //             Icons.qr_code,
+                          //             size: 70,
+                          //             color: Colors.blue,
+                          //           ),
+                          //           Text("Vaccine QrCode"),
+                          //         ],
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
                           Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),

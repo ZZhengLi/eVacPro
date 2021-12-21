@@ -83,10 +83,11 @@ class _VaccineDataState extends State<VaccineData> {
                   return Column(
                     children: [
                       ...snapshot.data!.docs
-                          .where((element) => element["name"]
-                              .toString()
-                              .toLowerCase()
-                              .contains(_searchController.text.toLowerCase()))
+                          .where((element) =>
+                              element["name"].toString().toLowerCase().contains(
+                                  _searchController.text.toLowerCase()) ||
+                              element["id"].toString().toLowerCase().contains(
+                                  _searchController.text.toLowerCase()))
                           .map((data) => InkWell(
                                 child: Card(
                                   child: ListTile(
