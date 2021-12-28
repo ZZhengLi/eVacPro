@@ -7,8 +7,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 class CheckAppointment extends StatefulWidget {
   final data;
 
-  CheckAppointment(
-      {Key? key, required QueryDocumentSnapshot<Object?> this.data})
+  CheckAppointment({Key? key, required DocumentSnapshot<Object?> this.data})
       : super(key: key);
 
   @override
@@ -94,7 +93,7 @@ class _CheckAppointmentState extends State<CheckAppointment> {
                 ...snapshot.data!.docs.map((QueryDocumentSnapshot data) {
                   final DateTime time = data["time"].toDate();
 
-                  return time.isAfter(DateTime(2000))
+                  return time.isBefore(DateTime(2200))
                       ? Card(
                           child: ListTile(
                               title: Text(

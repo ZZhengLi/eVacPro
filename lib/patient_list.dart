@@ -26,86 +26,92 @@ class _PatientListState extends State<PatientList> {
   Widget build(BuildContext context) {
     var users = FirebaseFirestore.instance.collection("Users").get();
 
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text("Patient List"),
-        elevation: 0,
-      ),
-      body: SafeArea(
-        child: ListView(
-          children: [
-            TextField(
-              controller: _searchController,
-              decoration: InputDecoration(
-                  hintText: "Search",
-                  prefixIcon: const Icon(Icons.search),
-                  suffixIcon: IconButton(
-                    icon: const Icon(Icons.close),
-                    onPressed: () {
-                      _searchController = TextEditingController();
-                      setState(() {});
-                    },
-                  )),
-              onChanged: (v) {
-                setState(() {
-                  _searchController = TextEditingController(text: v);
-                  _searchController.selection = TextSelection.fromPosition(
-                      TextPosition(offset: _searchController.text.length));
-                  setState(() {});
-                });
-              },
-            ),
-            FutureBuilder<QuerySnapshot>(
-                future: users,
-                builder: (context, snapshot) {
-                  if (snapshot.hasError) {
-                    EasyLoading.dismiss();
-                    return const Text('Something went wrong');
-                  }
+    return GestureDetector(
+      behavior: HitTestBehavior.translucent,
+      onTap: () {
+        FocusScope.of(context).requestFocus(FocusNode());
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text("Patient List"),
+          elevation: 0,
+        ),
+        body: SafeArea(
+          child: ListView(
+            children: [
+              TextField(
+                controller: _searchController,
+                decoration: InputDecoration(
+                    hintText: "Search",
+                    prefixIcon: const Icon(Icons.search),
+                    suffixIcon: IconButton(
+                      icon: const Icon(Icons.close),
+                      onPressed: () {
+                        _searchController = TextEditingController();
+                        setState(() {});
+                      },
+                    )),
+                onChanged: (v) {
+                  setState(() {
+                    _searchController = TextEditingController(text: v);
+                    _searchController.selection = TextSelection.fromPosition(
+                        TextPosition(offset: _searchController.text.length));
+                    setState(() {});
+                  });
+                },
+              ),
+              FutureBuilder<QuerySnapshot>(
+                  future: users,
+                  builder: (context, snapshot) {
+                    if (snapshot.hasError) {
+                      EasyLoading.dismiss();
+                      return const Text('Something went wrong');
+                    }
 
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    return const Text("Loading");
-                  }
-                  EasyLoading.dismiss();
-                  return Column(
-                    children: [
-                      ...snapshot.data!.docs
-                          .where((element) =>
-                              element["displayName"]
-                                  .toString()
-                                  .toLowerCase()
-                                  .contains(
-                                      _searchController.text.toLowerCase()) ||
-                              element["id"].toString().toLowerCase().contains(
-                                  _searchController.text.toLowerCase()))
-                          .map((data) => InkWell(
-                                child: Card(
-                                  child: ListTile(
-                                    leading: CircleAvatar(
-                                      backgroundImage:
-                                          NetworkImage(data["photoUrl"]),
+                    if (snapshot.connectionState == ConnectionState.waiting) {
+                      return const Text("Loading");
+                    }
+                    EasyLoading.dismiss();
+                    return Column(
+                      children: [
+                        ...snapshot.data!.docs
+                            .where((element) =>
+                                element["displayName"]
+                                    .toString()
+                                    .toLowerCase()
+                                    .contains(
+                                        _searchController.text.toLowerCase()) ||
+                                element["id"].toString().toLowerCase().contains(
+                                    _searchController.text.toLowerCase()))
+                            .map((data) => InkWell(
+                                  child: Card(
+                                    child: ListTile(
+                                      leading: CircleAvatar(
+                                        backgroundImage:
+                                            NetworkImage(data["photoUrl"]),
+                                      ),
+                                      title: Text(data["displayName"],
+                                          style: const TextStyle(
+                                            fontSize: 20,
+                                          )),
+                                      subtitle: Text(data["id"]),
+                                      trailing: const Icon(Icons.navigate_next),
                                     ),
-                                    title: Text(data["displayName"],
-                                        style: const TextStyle(
-                                          fontSize: 20,
-                                        )),
-                                    subtitle: Text(data["id"]),
-                                    trailing: const Icon(Icons.navigate_next),
                                   ),
-                                ),
-                                onTap: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              PatientInfo(data: data)));
-                                },
-                              ))
-                    ],
-                  );
-                })
-          ],
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                PatientInfo(data: data)));
+                                  },
+                                ))
+                      ],
+                    );
+                  })
+            ],
+          ),
         ),
       ),
     );
