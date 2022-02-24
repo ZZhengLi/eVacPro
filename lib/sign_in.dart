@@ -83,6 +83,7 @@ class SignIn extends StatelessWidget {
                                   RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(5)))),
                           onPressed: () async {
+                            FocusScope.of(context).requestFocus(FocusNode());
                             await signInMethod(context);
                           },
                           child: const Text("Sign In")),

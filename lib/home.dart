@@ -55,32 +55,32 @@ class Home extends StatelessWidget {
                         crossAxisSpacing: 10,
                         primary: false,
                         children: [
-                          Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => const Scanner(),
-                                  ),
-                                );
-                              },
-                              splashColor: Colors.blue,
-                              child: Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
-                                    Icon(Icons.qr_code_scanner,
-                                        size: 70, color: Colors.blue),
-                                    Text("Scanner"),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
+                          // Card(
+                          //   shape: RoundedRectangleBorder(
+                          //     borderRadius: BorderRadius.circular(20),
+                          //   ),
+                          //   child: InkWell(
+                          //     onTap: () {
+                          //       Navigator.push(
+                          //         context,
+                          //         MaterialPageRoute(
+                          //           builder: (context) => const Scanner(),
+                          //         ),
+                          //       );
+                          //     },
+                          //     splashColor: Colors.blue,
+                          //     child: Center(
+                          //       child: Column(
+                          //         mainAxisAlignment: MainAxisAlignment.center,
+                          //         children: const [
+                          //           Icon(Icons.qr_code_scanner,
+                          //               size: 70, color: Colors.blue),
+                          //           Text("Scanner"),
+                          //         ],
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
                           Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),

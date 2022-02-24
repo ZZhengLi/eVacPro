@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
+import 'package:vaccination_pro/scanner.dart';
 import 'package:vaccination_pro/vaccine_qr_code.dart';
 
 class VaccineInfo extends StatelessWidget {
@@ -21,7 +22,7 @@ class VaccineInfo extends StatelessWidget {
           child: const Text("Create QR Code"),
           onPressed: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return VaccineQrCode(data: data);
+              return Scanner(vaccineData: data);
             }));
           },
         ),

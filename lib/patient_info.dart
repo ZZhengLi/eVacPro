@@ -1,11 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:vaccination_pro/check_appointment.dart';
+import 'package:vaccination_pro/vaccine_data.dart';
+import 'package:vaccination_pro/vaccine_qr_code.dart';
 
 class PatientInfo extends StatelessWidget {
-  final data;
+  final data, VaccineData;
   const PatientInfo(
-      {Key? key, required DocumentSnapshot<Object?> this.data})
+      {Key? key,
+      required DocumentSnapshot<Object?> this.data,
+      required DocumentSnapshot<Object?> this.VaccineData})
       : super(key: key);
 
   @override
@@ -18,13 +22,25 @@ class PatientInfo extends StatelessWidget {
           title: const Text("Patient Info"),
           elevation: 0,
         ),
-        bottomNavigationBar: ElevatedButton(
-          child: const Text("Check appointment"),
-          onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return CheckAppointment(data: data);
-            }));
-          },
+        bottomNavigationBar: Row(
+          children: [
+            ElevatedButton(
+              child: const Text("Check appointment"),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return CheckAppointment(data: data);
+                }));
+              },
+            ),
+            ElevatedButton(
+              child: const Text("Create QR code for this user"),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return VaccineQrCode(data: data, vaccineData: VaccineData);
+                }));
+              },
+            ),
+          ],
         ),
         body: SafeArea(
             child: Column(

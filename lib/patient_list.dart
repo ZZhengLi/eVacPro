@@ -100,11 +100,11 @@ class _PatientListState extends State<PatientList> {
                                     ),
                                   ),
                                   onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                PatientInfo(data: data)));
+                                    // Navigator.push(
+                                    //     context,
+                                    //     MaterialPageRoute(
+                                    //         builder: (context) =>
+                                    //             PatientInfo(data: data)));
                                   },
                                 ))
                       ],
