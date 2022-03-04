@@ -2,14 +2,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:vaccination_pro/check_appointment.dart';
 import 'package:vaccination_pro/vaccine_data.dart';
-import 'package:vaccination_pro/vaccine_qr_code.dart';
+import 'package:vaccination_pro/vaccine_info.dart';
 
 class PatientInfo extends StatelessWidget {
-  final data, VaccineData;
-  const PatientInfo(
-      {Key? key,
-      required DocumentSnapshot<Object?> this.data,
-      required DocumentSnapshot<Object?> this.VaccineData})
+  final data;
+  const PatientInfo({Key? key, required DocumentSnapshot<Object?> this.data})
       : super(key: key);
 
   @override
@@ -23,22 +20,32 @@ class PatientInfo extends StatelessWidget {
           elevation: 0,
         ),
         bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(
-              child: const Text("Check appointment"),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return CheckAppointment(data: data);
-                }));
-              },
+            SizedBox(
+              width: 0.45 * width,
+              child: ElevatedButton(
+                child: const Text("Check appointment"),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return CheckAppointment(data: data);
+                  }));
+                },
+              ),
             ),
-            ElevatedButton(
-              child: const Text("Create QR code for this user"),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return VaccineQrCode(data: data, vaccineData: VaccineData);
-                }));
-              },
+            SizedBox(width: 0.05 * width),
+            SizedBox(
+              width: 0.45 * width,
+              child: ElevatedButton(
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.green)),
+                child: const Text("Create QR code"),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return VaccineInfo(data: data);
+                  }));
+                },
+              ),
             ),
           ],
         ),

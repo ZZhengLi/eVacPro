@@ -5,7 +5,7 @@ import 'package:vaccination_pro/patient_list.dart';
 import 'package:vaccination_pro/scanner.dart';
 import 'package:vaccination_pro/setting.dart';
 import 'package:vaccination_pro/vaccine_data.dart';
-import 'package:vaccination_pro/vaccine_qr_code.dart';
+import 'package:vaccination_pro/vaccine_info.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -55,44 +55,16 @@ class Home extends StatelessWidget {
                         crossAxisSpacing: 10,
                         primary: false,
                         children: [
-                          // Card(
-                          //   shape: RoundedRectangleBorder(
-                          //     borderRadius: BorderRadius.circular(20),
-                          //   ),
-                          //   child: InkWell(
-                          //     onTap: () {
-                          //       Navigator.push(
-                          //         context,
-                          //         MaterialPageRoute(
-                          //           builder: (context) => const Scanner(),
-                          //         ),
-                          //       );
-                          //     },
-                          //     splashColor: Colors.blue,
-                          //     child: Center(
-                          //       child: Column(
-                          //         mainAxisAlignment: MainAxisAlignment.center,
-                          //         children: const [
-                          //           Icon(Icons.qr_code_scanner,
-                          //               size: 70, color: Colors.blue),
-                          //           Text("Scanner"),
-                          //         ],
-                          //       ),
-                          //     ),
-                          //   ),
-                          // ),
                           Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: InkWell(
                               onTap: () {
-                                EasyLoading.show(
-                                    maskType: EasyLoadingMaskType.black);
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => PatientList(),
+                                    builder: (context) => const Scanner(),
                                   ),
                                 );
                               },
@@ -101,48 +73,76 @@ class Home extends StatelessWidget {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
-                                    Icon(
-                                      Icons.library_books,
-                                      size: 70,
-                                      color: Colors.blue,
-                                    ),
-                                    Text("Patient List"),
+                                    Icon(Icons.qr_code_scanner,
+                                        size: 70, color: Colors.blue),
+                                    Text("Scanner"),
                                   ],
                                 ),
                               ),
                             ),
                           ),
-                          Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: InkWell(
-                              onTap: () {
-                                EasyLoading.show(
-                                    maskType: EasyLoadingMaskType.black);
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => VaccineData(),
-                                  ),
-                                );
-                              },
-                              splashColor: Colors.blue,
-                              child: Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    SvgPicture.asset(
-                                        "assets/icons/vaccines.svg",
-                                        color: Colors.blue,
-                                        height: 70,
-                                        semanticsLabel: 'vaccines icon'),
-                                    const Text("Vaccine Data"),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
+                          // Card(
+                          //   shape: RoundedRectangleBorder(
+                          //     borderRadius: BorderRadius.circular(20),
+                          //   ),
+                          //   child: InkWell(
+                          //     onTap: () {
+                          //       EasyLoading.show(
+                          //           maskType: EasyLoadingMaskType.black);
+                          //       Navigator.push(
+                          //         context,
+                          //         MaterialPageRoute(
+                          //           builder: (context) => PatientList(),
+                          //         ),
+                          //       );
+                          //     },
+                          //     splashColor: Colors.blue,
+                          //     child: Center(
+                          //       child: Column(
+                          //         mainAxisAlignment: MainAxisAlignment.center,
+                          //         children: const [
+                          //           Icon(
+                          //             Icons.library_books,
+                          //             size: 70,
+                          //             color: Colors.blue,
+                          //           ),
+                          //           Text("Patient List"),
+                          //         ],
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
+                          // Card(
+                          //   shape: RoundedRectangleBorder(
+                          //     borderRadius: BorderRadius.circular(20),
+                          //   ),
+                          //   child: InkWell(
+                          //     onTap: () {
+                          //       EasyLoading.show(
+                          //           maskType: EasyLoadingMaskType.black);
+                          //       Navigator.push(
+                          //         context,
+                          //         MaterialPageRoute(
+                          //           builder: (context) => VaccineData(),
+                          //         ),
+                          //       );
+                          //     },
+                          //     splashColor: Colors.blue,
+                          //     child: Center(
+                          //       child: Column(
+                          //         mainAxisAlignment: MainAxisAlignment.center,
+                          //         children: [
+                          //           SvgPicture.asset(
+                          //               "assets/icons/vaccines.svg",
+                          //               color: Colors.blue,
+                          //               height: 70,
+                          //               semanticsLabel: 'vaccines icon'),
+                          //           const Text("Vaccine Data"),
+                          //         ],
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
                           // Card(
                           //   shape: RoundedRectangleBorder(
                           //     borderRadius: BorderRadius.circular(20),

@@ -8,17 +8,10 @@ import 'package:vaccination_pro/vaccine_data.dart';
 class AddVaccine extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
   AddVaccine({Key? key}) : super(key: key);
-  late String _adjuvant,
-      _antigen,
-      _brandName,
-      _description,
+  late String 
       _id,
       _manufacturer,
-      _name,
-      _provider,
-      _type,
-      _virulence;
-  DateTime _expiryDate = DateTime.now(), _manufactureDate = DateTime.now();
+      _name;
 
   @override
   Widget build(BuildContext context) {
@@ -61,35 +54,6 @@ class AddVaccine extends StatelessWidget {
                               errorText: "Lot Number is required"),
                           onSaved: (id) => _id = id!,
                         ),
-                        SizedBox(height: 0.025 * height),
-                        const Text("Adjuvant"),
-                        TextFormField(
-                          validator: RequiredValidator(
-                              errorText: "Adjuvant is required"),
-                          onSaved: (adjuvant) => _adjuvant = adjuvant!,
-                        ),
-                        SizedBox(height: 0.025 * height),
-                        const Text("Antigen"),
-                        TextFormField(
-                          validator: RequiredValidator(
-                              errorText: "Antigen is required"),
-                          onSaved: (antigen) => _antigen = antigen!,
-                        ),
-                        SizedBox(height: 0.025 * height),
-                        const Text("Description"),
-                        TextFormField(
-                          validator: RequiredValidator(
-                              errorText: "Description is required"),
-                          onSaved: (description) => _description = description!,
-                        ),
-                        SizedBox(height: 0.025 * height),
-                        const Text("Brand Name"),
-                        TextFormField(
-                          validator: RequiredValidator(
-                              errorText: "Brand Name is required"),
-                          onSaved: (brandName) => _brandName = brandName!,
-                        ),
-                        SizedBox(height: 0.025 * height),
                         const Text("Manufacturer"),
                         TextFormField(
                           validator: RequiredValidator(
@@ -98,76 +62,55 @@ class AddVaccine extends StatelessWidget {
                               _manufacturer = manufacturer!,
                         ),
                         SizedBox(height: 0.025 * height),
-                        const Text("Provider"),
-                        TextFormField(
-                          validator: RequiredValidator(
-                              errorText: "Provideris required"),
-                          onSaved: (provider) => _provider = provider!,
-                        ),
-                        SizedBox(height: 0.025 * height),
-                        const Text("Type"),
-                        TextFormField(
-                          validator:
-                              RequiredValidator(errorText: "Type is required"),
-                          onSaved: (type) => _type = type!,
-                        ),
-                        SizedBox(height: 0.025 * height),
-                        const Text("Virulence"),
-                        TextFormField(
-                          validator: RequiredValidator(
-                              errorText: "Virulence is required"),
-                          onSaved: (virulence) => _virulence = virulence!,
-                        ),
-                        SizedBox(height: 0.025 * height),
-                        const Text("Manufacture Date"),
-                        Material(
-                          color: Colors.transparent,
-                          child: TextButton(
-                              onPressed: () {
-                                DatePicker.showDatePicker(context,
-                                    showTitleActions: true,
-                                    minTime: DateTime(1900, 1, 1),
-                                    maxTime: DateTime.now(), onChanged: (date) {
-                                  _manufactureDate = date;
-                                }, onConfirm: (date) {
-                                  _manufactureDate = date;
-                                },
-                                    currentTime: _manufactureDate,
-                                    locale: LocaleType.en);
-                              },
-                              child: Text(
-                                "${_manufactureDate.year.toString()}-${_manufactureDate.month.toString()}-${_manufactureDate.day.toString()}",
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                ),
-                              )),
-                        ),
+                        // const Text("Manufacture Date"),
+                        // Material(
+                        //   color: Colors.transparent,
+                        //   child: TextButton(
+                        //       onPressed: () {
+                        //         DatePicker.showDatePicker(context,
+                        //             showTitleActions: true,
+                        //             minTime: DateTime(1900, 1, 1),
+                        //             maxTime: DateTime.now(), onChanged: (date) {
+                        //           _manufactureDate = date;
+                        //         }, onConfirm: (date) {
+                        //           _manufactureDate = date;
+                        //         },
+                        //             currentTime: _manufactureDate,
+                        //             locale: LocaleType.en);
+                        //       },
+                        //       child: Text(
+                        //         "${_manufactureDate.year.toString()}-${_manufactureDate.month.toString()}-${_manufactureDate.day.toString()}",
+                        //         style: const TextStyle(
+                        //           fontWeight: FontWeight.bold,
+                        //           fontSize: 16,
+                        //         ),
+                        //       )),
+                        // ),
                         SizedBox(height: 0.025 * height),
                         const Text("Expiry Date"),
-                        Material(
-                          color: Colors.transparent,
-                          child: TextButton(
-                              onPressed: () {
-                                DatePicker.showDatePicker(context,
-                                    showTitleActions: true,
-                                    minTime: DateTime.now(),
-                                    maxTime: DateTime(2200), onChanged: (date) {
-                                  _expiryDate = date;
-                                }, onConfirm: (date) {
-                                  _expiryDate = date;
-                                },
-                                    currentTime: _expiryDate,
-                                    locale: LocaleType.en);
-                              },
-                              child: Text(
-                                "${_expiryDate.year.toString()}-${_expiryDate.month.toString()}-${_expiryDate.day.toString()}",
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                ),
-                              )),
-                        ),
+                        // Material(
+                        //   color: Colors.transparent,
+                        //   child: TextButton(
+                        //       onPressed: () {
+                        //         DatePicker.showDatePicker(context,
+                        //             showTitleActions: true,
+                        //             minTime: DateTime.now(),
+                        //             maxTime: DateTime(2200), onChanged: (date) {
+                        //           _expiryDate = date;
+                        //         }, onConfirm: (date) {
+                        //           _expiryDate = date;
+                        //         },
+                        //             currentTime: _expiryDate,
+                        //             locale: LocaleType.en);
+                        //       },
+                        //       child: Text(
+                        //         "${_expiryDate.year.toString()}-${_expiryDate.month.toString()}-${_expiryDate.day.toString()}",
+                        //         style: const TextStyle(
+                        //           fontWeight: FontWeight.bold,
+                        //           fontSize: 16,
+                        //         ),
+                        //       )),
+                        // ),
                       ],
                     ),
                   ),
@@ -185,17 +128,7 @@ class AddVaccine extends StatelessWidget {
                                 .add({
                               "name": _name,
                               "id": _id,
-                              "adjuvant": _adjuvant,
-                              "antigen": _antigen,
-                              "brand_name": _brandName,
-                              "description": _description,
                               "manufacturer": _manufacturer,
-                              "provider": _provider,
-                              "type": _type,
-                              "virulence": _virulence,
-                              "expiry_date": Timestamp.fromDate(_expiryDate),
-                              "manufacture_date":
-                                  Timestamp.fromDate(_manufactureDate)
                             });
                             EasyLoading.showSuccess(
                                 "New vaccine added successfully!");

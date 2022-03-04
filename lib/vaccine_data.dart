@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:vaccination_pro/add_vaccine.dart';
-import 'package:vaccination_pro/vaccine_info.dart';
+import 'package:vaccination_pro/vaccine_infos.dart';
 
 class VaccineData extends StatefulWidget {
   VaccineData({Key? key}) : super(key: key);
