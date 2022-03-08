@@ -78,7 +78,7 @@ class PatientInfo extends StatelessWidget {
                               infoFormat(
                                   width, height, "Gender:", data["gender"]),
                               infoFormat(width, height, "DOB:",
-                                  "${data["dob"].toDate().year}-${data["dob"].toDate().month}-${data["dob"].toDate().day}"),
+                                  "${data["dob"].toDate().year}-${data["dob"].toDate().month.toString().padLeft(2, '0')}-${data["dob"].toDate().day.toString().padLeft(2, '0')}"),
                               Row(
                                 children: [
                                   SizedBox(

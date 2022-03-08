@@ -208,7 +208,7 @@ class CheckAppointment extends StatelessWidget {
                                                         const EdgeInsets.only(
                                                             left: 4.0),
                                                     child: Text(
-                                                      "${time.hour.toString()}:${time.minute.toString()} ",
+                                                      "${time.hour.toString().padLeft(2, '0')}:${time.minute.toString().padLeft(2, '0')} ",
                                                       textAlign:
                                                           TextAlign.center,
                                                       style: TextStyle(
@@ -231,7 +231,7 @@ class CheckAppointment extends StatelessWidget {
                                                 padding: const EdgeInsets.only(
                                                     top: 1.5, left: 4.0),
                                                 child: Text(
-                                                  "${time.year.toString()}-${time.month.toString()}-${time.day.toString()} ",
+                                                  "${time.year.toString()}-${time.month.toString().padLeft(2, '0')}-${time.day.toString().padLeft(2, '0')} ",
                                                   textAlign: TextAlign.center,
                                                   style: TextStyle(
                                                     fontFamily: FitnessAppTheme

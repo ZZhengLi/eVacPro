@@ -129,7 +129,7 @@ class AddAppointment extends StatelessWidget {
                                           locale: LocaleType.en);
                                     },
                                     child: Text(
-                                      "${_time.year.toString()}-${_time.month.toString()}-${_time.day.toString()} ${_time.hour.toString()}:${_time.minute.toString()}",
+                                      "${_time.year.toString()}-${_time.month.toString().padLeft(2, '0')}-${_time.day.toString().padLeft(2, '0')} ${_time.hour.toString().padLeft(2, '0')}:${_time.minute.toString().padLeft(2, '0')}",
                                       style: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
