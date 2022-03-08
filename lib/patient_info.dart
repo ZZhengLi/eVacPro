@@ -25,10 +25,10 @@ class PatientInfo extends StatelessWidget {
             SizedBox(
               width: 0.45 * width,
               child: ElevatedButton(
-                child: const Text("Check appointment"),
+                child: const Text("Check Appointment"),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return CheckAppointment(data: data);
+                    return CheckAppointment(data2: data);
                   }));
                 },
               ),
@@ -39,7 +39,7 @@ class PatientInfo extends StatelessWidget {
               child: ElevatedButton(
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.green)),
-                child: const Text("Create QR code"),
+                child: const Text("Create QR Code"),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return VaccineInfo(data: data);

@@ -1,12 +1,8 @@
-import 'dart:convert';
 import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:form_field_validator/form_field_validator.dart';
-import 'package:get/get.dart';
-import 'package:qr_flutter/qr_flutter.dart';
-import 'package:vaccination_pro/vaccine_data.dart';
 import 'package:vaccination_pro/vaccine_qr.dart';
 
 class VaccineInfo extends StatefulWidget {
@@ -55,6 +51,9 @@ class _VaccineInfoState extends State<VaccineInfo> {
               children: [
                 Column(
                   children: [
+                    const SizedBox(
+                      height: 20,
+                    ),
                     Form(
                         key: _formKey,
                         child: SizedBox(
@@ -103,12 +102,12 @@ class _VaccineInfoState extends State<VaccineInfo> {
                               ),
                               Row(
                                 children: const [
-                                  Text("Dose Count"),
+                                  Text("Dose Number"),
                                 ],
                               ),
                               TextFormField(
                                 validator: RequiredValidator(
-                                    errorText: "Dose Count is required"),
+                                    errorText: "Dose Number is required"),
                                 onSaved: (dose) => _dose = dose!,
                               ),
                               const SizedBox(
@@ -143,13 +142,18 @@ class _VaccineInfoState extends State<VaccineInfo> {
                                   .doc("QR/temp")
                                   .set({
                                 "uid": widget.data["uid"],
+                                "displayName": widget.data["displayName"],
+                                "dob": widget.data["dob"],
+                                "gender": widget.data["gender"],
+                                "idC": widget.data["id"],
+                                "address": widget.data["address"],
                                 "code": _randomString,
                                 "name": _name,
                                 "id": _id,
                                 "manufacturer": _manufacturer,
                                 "date": Timestamp.fromDate(DateTime.now()),
                                 "place_of_service": _place,
-                                "dose_count": _dose
+                                "dose_number": _dose
                               });
                               _qrData = _randomString;
                               setState(() {
@@ -166,14 +170,6 @@ class _VaccineInfoState extends State<VaccineInfo> {
                           }));
                         },
                         child: const Text("Create")),
-                    // Expanded(
-                    //   child: Center(
-                    //       child: QrImage(
-                    //     foregroundColor: qrState ? null : Colors.transparent,
-                    //     data: _qrData,
-                    //     size: 300,
-                    //   )),
-                    // )
                   ],
                 ),
               ],

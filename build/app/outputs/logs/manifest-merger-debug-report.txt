@@ -11,6 +11,8 @@ MERGED from [:firebase_core] D:\1A\University\Year 2021-2\Senior Project\vaccina
 MERGED from [:firebase_core] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
 MERGED from [:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.firebase:firebase-analytics:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\956c690e1f960c4a93cb6cdc1a39a4f0\transformed\jetified-firebase-analytics-20.0.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\956c690e1f960c4a93cb6cdc1a39a4f0\transformed\jetified-firebase-analytics-20.0.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
@@ -73,6 +75,8 @@ MERGED from [:cloud_firestore] D:\1A\University\Year 2021-2\Senior Project\vacci
 MERGED from [:firebase_core] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-14:12
 MERGED from [:qr_code_scanner] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\qr_code_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\e138f932e7ae033d75808390c8ecff86\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [com.google.firebase:firebase-analytics:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\956c690e1f960c4a93cb6cdc1a39a4f0\transformed\jetified-firebase-analytics-20.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\82140\.gradle\caches\transforms-3\e8ba2576a86553961e648e551611783c\transformed\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:17:1-83:12
@@ -200,6 +204,10 @@ MERGED from [:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\
 MERGED from [:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:qr_code_scanner] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\qr_code_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:67
 MERGED from [:qr_code_scanner] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\qr_code_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:67
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\e138f932e7ae033d75808390c8ecff86\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\e138f932e7ae033d75808390c8ecff86\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-analytics:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\956c690e1f960c4a93cb6cdc1a39a4f0\transformed\jetified-firebase-analytics-20.0.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\956c690e1f960c4a93cb6cdc1a39a4f0\transformed\jetified-firebase-analytics-20.0.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\82140\.gradle\caches\transforms-3\e8ba2576a86553961e648e551611783c\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43
@@ -414,6 +422,18 @@ ADDED from [:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\v
 		ADDED from [:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
 	android:name
 		ADDED from [:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.0.0] C:\Users\82140\.gradle\caches\transforms-3\eb960199cb916ca0bae96832ce8652b1\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:13:5-79

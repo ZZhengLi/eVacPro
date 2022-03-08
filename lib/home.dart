@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:vaccination_pro/patient_list.dart';
 import 'package:vaccination_pro/scanner.dart';
 import 'package:vaccination_pro/setting.dart';
-import 'package:vaccination_pro/vaccine_data.dart';
-import 'package:vaccination_pro/vaccine_info.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
