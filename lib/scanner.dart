@@ -135,16 +135,12 @@ class _ScannerState extends State<Scanner> {
             .doc("Users/${result!.code.toString()}")
             .get();
         if (user.exists) {
-          await FirebaseFirestore.instance
-              .doc("Users/${result!.code.toString()}")
-              .get()
-              .then((data) {
-            Navigator.pop(context);
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => PatientInfo(data: data)));
-          });
+          Navigator.pop(context);
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) =>
+                      PatientInfo(uid: result!.code.toString())));
         }
       }
     });

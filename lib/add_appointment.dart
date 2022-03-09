@@ -58,20 +58,7 @@ class AddAppointment extends StatelessWidget {
                               ),
                               Row(
                                 children: const [
-                                  Text("Lot Number"),
-                                ],
-                              ),
-                              TextFormField(
-                                validator: RequiredValidator(
-                                    errorText: "Lot Number is required"),
-                                onSaved: (id) => _id = id!,
-                              ),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              Row(
-                                children: const [
-                                  Text("Provider"),
+                                  Text("Provider Name"),
                                 ],
                               ),
                               TextFormField(
@@ -153,9 +140,9 @@ class AddAppointment extends StatelessWidget {
                               await FirebaseFirestore.instance
                                   .doc("Users/${data["uid"]}")
                                   .collection("Appointment")
-                                  .add({
+                                  .doc(_name + _dose)
+                                  .set({
                                 "vaccine_name": _name,
-                                "vaccine_id": _id,
                                 "provider_name": _provider,
                                 "time": _time,
                                 "place_of_service": _place,

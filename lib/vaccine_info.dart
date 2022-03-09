@@ -7,8 +7,14 @@ import 'package:vaccination_pro/vaccine_qr.dart';
 
 class VaccineInfo extends StatefulWidget {
   final data;
+  String name, dose, place;
 
-  VaccineInfo({Key? key, required DocumentSnapshot<Object?> this.data})
+  VaccineInfo(
+      {Key? key,
+      required DocumentSnapshot<Object?> this.data,
+      this.name = "",
+      this.dose = "",
+      this.place = ""})
       : super(key: key);
 
   @override
@@ -20,7 +26,7 @@ class _VaccineInfoState extends State<VaccineInfo> {
 
   late String _randomString;
 
-  late String _place, _dose, _name, _id, _manufacturer;
+  late String _id, _manufacturer;
 
   var _qrData = "";
 
@@ -66,9 +72,11 @@ class _VaccineInfoState extends State<VaccineInfo> {
                                 ],
                               ),
                               TextFormField(
+                                controller:
+                                    TextEditingController(text: widget.name),
                                 validator: RequiredValidator(
                                     errorText: "Vaccine Name is required"),
-                                onSaved: (name) => _name = name!,
+                                onSaved: (name) => widget.name = name!,
                               ),
                               const SizedBox(
                                 height: 20,
@@ -106,9 +114,11 @@ class _VaccineInfoState extends State<VaccineInfo> {
                                 ],
                               ),
                               TextFormField(
+                                controller:
+                                    TextEditingController(text: widget.dose),
                                 validator: RequiredValidator(
                                     errorText: "Dose Number is required"),
-                                onSaved: (dose) => _dose = dose!,
+                                onSaved: (dose) => widget.dose = dose!,
                               ),
                               const SizedBox(
                                 height: 20,
@@ -119,9 +129,11 @@ class _VaccineInfoState extends State<VaccineInfo> {
                                 ],
                               ),
                               TextFormField(
+                                controller:
+                                    TextEditingController(text: widget.place),
                                 validator: RequiredValidator(
                                     errorText: "Place of Service is required"),
-                                onSaved: (place) => _place = place!,
+                                onSaved: (place) => widget.place = place!,
                               ),
                               const SizedBox(
                                 height: 20,
@@ -148,12 +160,12 @@ class _VaccineInfoState extends State<VaccineInfo> {
                                 "idC": widget.data["id"],
                                 "address": widget.data["address"],
                                 "code": _randomString,
-                                "name": _name,
+                                "name": widget.name,
                                 "id": _id,
                                 "manufacturer": _manufacturer,
                                 "date": Timestamp.fromDate(DateTime.now()),
-                                "place_of_service": _place,
-                                "dose_number": _dose
+                                "place_of_service": widget.place,
+                                "dose_number": widget.dose
                               });
                               _qrData = _randomString;
                               setState(() {
