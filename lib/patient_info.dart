@@ -41,10 +41,12 @@ class PatientInfo extends StatelessWidget {
                     child: ElevatedButton(
                       child: const Text("Check Appointment"),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                          return CheckAppointment(data2: data);
-                        }));
+                        data["verification"]
+                            ? Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                                return CheckAppointment(data2: data);
+                              }))
+                            : EasyLoading.showError("This user is unverified!");
                       },
                     ),
                   ),
@@ -57,10 +59,12 @@ class PatientInfo extends StatelessWidget {
                               MaterialStateProperty.all(Colors.green)),
                       child: const Text("Create QR Code"),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                          return VaccineInfo(data: data);
-                        }));
+                        data["verification"]
+                            ? Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                                return VaccineInfo(data: data);
+                              }))
+                            : EasyLoading.showError("This user is unverified!");
                       },
                     ),
                   ),
@@ -89,7 +93,7 @@ class PatientInfo extends StatelessWidget {
                                 alignment: Alignment.topLeft,
                                 child: Column(
                                   children: [
-                                    data["verification"] == true
+                                    data["verification"]
                                         ? const Text("√Verified",
                                             style:
                                                 TextStyle(color: Colors.green))

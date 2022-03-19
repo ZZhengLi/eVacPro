@@ -2,6 +2,7 @@ import 'dart:developer';
 import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -141,6 +142,9 @@ class _ScannerState extends State<Scanner> {
               MaterialPageRoute(
                   builder: (context) =>
                       PatientInfo(uid: result!.code.toString())));
+        } else {
+          Navigator.pop(context);
+          EasyLoading.showError("User doesn't exist");
         }
       }
     });
