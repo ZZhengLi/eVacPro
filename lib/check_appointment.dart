@@ -16,6 +16,8 @@ class CheckAppointment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var width = MediaQuery.of(context).size.width;
+    var height = MediaQuery.of(context).size.height;
     var collection = FirebaseFirestore.instance
         .doc("Users/${data2["uid"]}")
         .collection("Appointment");
@@ -303,7 +305,7 @@ class CheckAppointment extends StatelessWidget {
                                           child: Row(
                                             children: <Widget>[
                                               Container(
-                                                width: 200,
+                                                width: 0.5 * width,
                                                 height: 42,
                                                 decoration: BoxDecoration(
                                                   color: Colors.red.shade400,
@@ -332,7 +334,7 @@ class CheckAppointment extends StatelessWidget {
                                                     style: TextStyle(
                                                       fontWeight:
                                                           FontWeight.w600,
-                                                      fontSize: 18,
+                                                      fontSize: 14,
                                                       letterSpacing: 0.0,
                                                       color:
                                                           DesignCourseAppTheme
@@ -344,7 +346,7 @@ class CheckAppointment extends StatelessWidget {
                                             ],
                                           ),
                                         )),
-                                    const SizedBox(width: 20),
+                                    SizedBox(width: 0.05 * width),
                                     InkWell(
                                         onTap: () {
                                           Navigator.push(context,
@@ -364,7 +366,7 @@ class CheckAppointment extends StatelessWidget {
                                           child: Row(
                                             children: <Widget>[
                                               Container(
-                                                width: 150,
+                                                width: 0.35 * width,
                                                 height: 42,
                                                 decoration: BoxDecoration(
                                                   color: Colors.green,
@@ -393,7 +395,7 @@ class CheckAppointment extends StatelessWidget {
                                                     style: TextStyle(
                                                       fontWeight:
                                                           FontWeight.w600,
-                                                      fontSize: 18,
+                                                      fontSize: 14,
                                                       letterSpacing: 0.0,
                                                       color:
                                                           DesignCourseAppTheme

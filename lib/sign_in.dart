@@ -72,7 +72,7 @@ class SignIn extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     SizedBox(
-                      width: 0.2 * width,
+                      width: 0.25 * width,
                       //Sign in button
                       child: ElevatedButton(
                           style: ButtonStyle(

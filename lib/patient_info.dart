@@ -37,7 +37,7 @@ class PatientInfo extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(
-                    width: 0.45 * width,
+                    width: 0.51 * width,
                     child: ElevatedButton(
                       child: const Text("Check Appointment"),
                       onPressed: () {
@@ -50,7 +50,7 @@ class PatientInfo extends StatelessWidget {
                       },
                     ),
                   ),
-                  SizedBox(width: 0.05 * width),
+                  SizedBox(width: 0.01 * width),
                   SizedBox(
                     width: 0.45 * width,
                     child: ElevatedButton(
