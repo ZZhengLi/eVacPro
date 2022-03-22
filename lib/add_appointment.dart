@@ -71,10 +71,11 @@ class AddAppointment extends StatelessWidget {
                               ),
                               Row(
                                 children: const [
-                                  Text("Dose Count(number only)"),
+                                  Text("Dose number"),
                                 ],
                               ),
                               TextFormField(
+                                keyboardType: TextInputType.number,
                                 validator: RequiredValidator(
                                     errorText: "Dose Count is required"),
                                 onSaved: (dose) => _dose = dose!,
@@ -146,7 +147,8 @@ class AddAppointment extends StatelessWidget {
                                 "provider_name": _provider,
                                 "time": _time,
                                 "place_of_service": _place,
-                                "dose_number": _dose
+                                "dose_number": _dose,
+                                "expired": false
                               });
                             } catch (e) {
                               EasyLoading.showError(e.toString());

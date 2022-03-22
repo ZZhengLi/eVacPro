@@ -1,0 +1,437 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.seniorproject.vaccinationpro"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml
+10
+11    <queries>
+11-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:3:5-29:15
+12
+13        <!-- If your app opens https URLs -->
+14        <intent>
+14-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:5:5-8:14
+15            <action android:name="android.intent.action.VIEW" />
+15-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:6:9-61
+15-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:6:17-58
+16
+17            <data android:scheme="https" />
+17-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:9-40
+17-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:15-37
+18        </intent>
+19        <!-- If your app opens http URLs -->
+20        <intent>
+20-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:10:5-13:14
+21            <action android:name="android.intent.action.VIEW" />
+21-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:6:9-61
+21-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:6:17-58
+22
+23            <data android:scheme="http" />
+23-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:9-40
+23-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:15-37
+24        </intent>
+25        <!-- If your app makes calls -->
+26        <intent>
+26-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:15:5-18:14
+27            <action android:name="android.intent.action.DIAL" />
+27-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:16:9-61
+27-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:16:17-58
+28
+29            <data android:scheme="tel" />
+29-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:9-40
+29-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:15-37
+30        </intent>
+31        <!-- If your sends SMS messages -->
+32        <intent>
+32-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:20:5-23:14
+33            <action android:name="android.intent.action.SENDTO" />
+33-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:21:9-63
+33-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:21:17-60
+34
+35            <data android:scheme="smsto" />
+35-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:9-40
+35-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:15-37
+36        </intent>
+37        <!-- If your app sends emails -->
+38        <intent>
+38-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:25:5-28:14
+39            <action android:name="android.intent.action.SEND" />
+39-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:26:9-61
+39-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:26:17-58
+40
+41            <data android:mimeType="*/*" />
+41-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:9-40
+41-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:27:15-37
+42        </intent>
+43    </queries>
+44
+45    <uses-permission android:name="android.permission.INTERNET" />
+45-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:23:5-67
+45-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:23:22-64
+46    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+46-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
+46-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:22-76
+47    <uses-permission android:name="android.permission.WAKE_LOCK" />
+47-->[com.google.android.gms:play-services-measurement-api:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\f00db696c1757fa884d831386a1ccfff\transformed\jetified-play-services-measurement-api-20.0.1\AndroidManifest.xml:24:5-68
+47-->[com.google.android.gms:play-services-measurement-api:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\f00db696c1757fa884d831386a1ccfff\transformed\jetified-play-services-measurement-api-20.0.1\AndroidManifest.xml:24:22-65
+48    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Include required permissions for Advertising Id -->
+48-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:26:5-110
+48-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:26:22-107
+49    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+49-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\82140\.gradle\caches\transforms-3\f738233c3ecf321e5303f6762e5d64ae\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+49-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\82140\.gradle\caches\transforms-3\f738233c3ecf321e5303f6762e5d64ae\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:22-76
+50    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+50-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:22:5-65
+50-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:22:22-62
+51    <uses-feature
+51-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:25:5-27:36
+52        android:name="android.hardware.camera"
+52-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:26:9-47
+53        android:required="false" />
+53-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:27:9-33
+54    <uses-feature
+54-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:28:5-30:36
+55        android:name="android.hardware.camera.front"
+55-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:29:9-53
+56        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+56-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:30:9-33
+57    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+58    <uses-feature
+58-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:33:5-35:36
+59        android:name="android.hardware.camera.autofocus"
+59-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:34:9-57
+60        android:required="false" />
+60-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:35:9-33
+61    <uses-feature
+61-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:36:5-38:36
+62        android:name="android.hardware.camera.flash"
+62-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:37:9-53
+63        android:required="false" />
+63-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:38:9-33
+64    <uses-feature
+64-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:39:5-41:36
+65        android:name="android.hardware.screen.landscape"
+65-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:40:9-57
+66        android:required="false" />
+66-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:41:9-33
+67    <uses-feature
+67-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:42:5-44:36
+68        android:name="android.hardware.wifi"
+68-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:43:9-45
+69        android:required="false" />
+69-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:44:9-33
+70
+71    <application
+72        android:name="android.app.Application"
+72-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:32:9-42
+73        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+73-->[androidx.core:core:1.6.0] C:\Users\82140\.gradle\caches\transforms-3\1f832c3f39d90ac016242d0eef1cfa52\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+74        android:icon="@mipmap/ic_launcher"
+74-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:33:9-43
+75        android:label="eVac pro" >
+75-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:31:9-33
+76        <activity
+76-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:34:9-54:20
+77            android:name="com.seniorproject.vaccinationpro.MainActivity"
+77-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:35:13-41
+78            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+78-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:39:13-163
+79            android:exported="true"
+79-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:36:13-36
+80            android:hardwareAccelerated="true"
+80-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:40:13-47
+81            android:launchMode="singleTop"
+81-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:37:13-43
+82            android:theme="@style/LaunchTheme"
+82-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:38:13-47
+83            android:windowSoftInputMode="adjustResize" >
+83-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:41:13-55
+84
+85            <!--
+86                 Specifies an Android theme to apply to this Activity as soon as
+87                 the Android process has started. This theme is visible to the user
+88                 while the Flutter UI initializes. After that, this theme continues
+89                 to determine the Window background behind the Flutter UI.
+90            -->
+91            <meta-data
+91-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:46:13-49:17
+92                android:name="io.flutter.embedding.android.NormalTheme"
+92-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:47:15-70
+93                android:resource="@style/NormalTheme" />
+93-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:48:15-52
+94
+95            <intent-filter>
+95-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:50:13-53:29
+96                <action android:name="android.intent.action.MAIN" />
+96-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:51:17-68
+96-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:51:25-66
+97
+98                <category android:name="android.intent.category.LAUNCHER" />
+98-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:52:17-76
+98-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:52:27-74
+99            </intent-filter>
+100        </activity>
+101        <!--
+102             Don't delete the meta-data below.
+103             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+104        -->
+105        <meta-data
+105-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:57:9-59:33
+106            android:name="flutterEmbedding"
+106-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:58:13-44
+107            android:value="2" />
+107-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:59:13-30
+108
+109        <service
+109-->[:firebase_auth] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-12:19
+110            android:name="com.google.firebase.components.ComponentDiscoveryService"
+110-->[:firebase_auth] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:8:18-89
+111            android:directBootAware="true"
+111-->[com.google.firebase:firebase-common:20.0.0] C:\Users\82140\.gradle\caches\transforms-3\1b61674ae02005112346fa6e5d754ca8\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+112            android:exported="false" >
+112-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:76:13-37
+113            <meta-data
+113-->[:firebase_auth] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+114                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+114-->[:firebase_auth] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-124
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[:firebase_auth] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+116            <meta-data
+116-->[:firebase_storage] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+117                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+117-->[:firebase_storage] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-126
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[:firebase_storage] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+119            <meta-data
+119-->[:cloud_firestore] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+120                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+120-->[:cloud_firestore] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-134
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[:cloud_firestore] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+122            <meta-data
+122-->[:firebase_core] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+123                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+123-->[:firebase_core] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-124
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[:firebase_core] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+126                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+126-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\82140\.gradle\caches\transforms-3\eb960199cb916ca0bae96832ce8652b1\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:20:13-22:85
+129                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+129-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\82140\.gradle\caches\transforms-3\eb960199cb916ca0bae96832ce8652b1\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:21:17-111
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\82140\.gradle\caches\transforms-3\eb960199cb916ca0bae96832ce8652b1\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:22:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\82140\.gradle\caches\transforms-3\6f811a496f4f86397ebf874e597a58cf\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
+132                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+132-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\82140\.gradle\caches\transforms-3\6f811a496f4f86397ebf874e597a58cf\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\82140\.gradle\caches\transforms-3\6f811a496f4f86397ebf874e597a58cf\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
+134            <meta-data
+134-->[com.google.android.gms:play-services-measurement-api:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\f00db696c1757fa884d831386a1ccfff\transformed\jetified-play-services-measurement-api-20.0.1\AndroidManifest.xml:30:13-32:85
+135                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+135-->[com.google.android.gms:play-services-measurement-api:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\f00db696c1757fa884d831386a1ccfff\transformed\jetified-play-services-measurement-api-20.0.1\AndroidManifest.xml:31:17-139
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.android.gms:play-services-measurement-api:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\f00db696c1757fa884d831386a1ccfff\transformed\jetified-play-services-measurement-api-20.0.1\AndroidManifest.xml:32:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\82140\.gradle\caches\transforms-3\f4f314f7787490a623fc111ae0d07762\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+138                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+138-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\82140\.gradle\caches\transforms-3\f4f314f7787490a623fc111ae0d07762\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\82140\.gradle\caches\transforms-3\f4f314f7787490a623fc111ae0d07762\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+140        </service>
+141
+142        <activity
+142-->[:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-11:74
+143            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+143-->[:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-74
+144            android:exported="false"
+144-->[:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-37
+145            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+145-->[:url_launcher_android] D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-71
+146
+147        <uses-library
+147-->[androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+148            android:name="androidx.window.extensions"
+148-->[androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+149            android:required="false" />
+149-->[androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+150        <uses-library
+150-->[androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+151            android:name="androidx.window.sidecar"
+151-->[androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+152            android:required="false" />
+152-->[androidx.window:window:1.0.0-beta04] C:\Users\82140\.gradle\caches\transforms-3\c56f8c658429a5f28658e5eb50a08b5a\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+153
+154        <activity
+154-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+155            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+155-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+156            android:excludeFromRecents="true"
+156-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+157            android:exported="true"
+157-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+158            android:launchMode="singleTask"
+158-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+159            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+159-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+160            <intent-filter>
+160-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+161                <action android:name="android.intent.action.VIEW" />
+161-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:6:9-61
+161-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:6:17-58
+162
+163                <category android:name="android.intent.category.DEFAULT" />
+163-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+163-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+164                <category android:name="android.intent.category.BROWSABLE" />
+164-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+164-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+165
+166                <data
+166-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:9-40
+167                    android:host="firebase.auth"
+168                    android:path="/"
+169                    android:scheme="genericidp" />
+169-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:15-37
+170            </intent-filter>
+171        </activity>
+172        <activity
+172-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+173            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+173-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+174            android:excludeFromRecents="true"
+174-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+175            android:exported="true"
+175-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+176            android:launchMode="singleTask"
+176-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+177            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+177-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+178            <intent-filter>
+178-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+179                <action android:name="android.intent.action.VIEW" />
+179-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:6:9-61
+179-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:6:17-58
+180
+181                <category android:name="android.intent.category.DEFAULT" />
+181-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+181-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+182                <category android:name="android.intent.category.BROWSABLE" />
+182-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+182-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+183
+184                <data
+184-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:9-40
+185                    android:host="firebase.auth"
+186                    android:path="/"
+187                    android:scheme="recaptcha" />
+187-->D:\1A\University\Year 2021-2\Senior Project\vaccination_pro\android\app\src\main\AndroidManifest.xml:7:15-37
+188            </intent-filter>
+189        </activity>
+190
+191        <service
+191-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+192            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+192-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+193            android:enabled="true"
+193-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+194            android:exported="false" >
+194-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+195            <intent-filter>
+195-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+196                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+196-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+196-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+197
+198                <category android:name="android.intent.category.DEFAULT" />
+198-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+198-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\82140\.gradle\caches\transforms-3\aa4dbe1c0e90c81bdccd27a7311a9076\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+199            </intent-filter>
+200        </service>
+201
+202        <provider
+202-->[com.google.firebase:firebase-common:20.0.0] C:\Users\82140\.gradle\caches\transforms-3\1b61674ae02005112346fa6e5d754ca8\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+203            android:name="com.google.firebase.provider.FirebaseInitProvider"
+203-->[com.google.firebase:firebase-common:20.0.0] C:\Users\82140\.gradle\caches\transforms-3\1b61674ae02005112346fa6e5d754ca8\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+204            android:authorities="com.seniorproject.vaccinationpro.firebaseinitprovider"
+204-->[com.google.firebase:firebase-common:20.0.0] C:\Users\82140\.gradle\caches\transforms-3\1b61674ae02005112346fa6e5d754ca8\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+205            android:directBootAware="true"
+205-->[com.google.firebase:firebase-common:20.0.0] C:\Users\82140\.gradle\caches\transforms-3\1b61674ae02005112346fa6e5d754ca8\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+206            android:exported="false"
+206-->[com.google.firebase:firebase-common:20.0.0] C:\Users\82140\.gradle\caches\transforms-3\1b61674ae02005112346fa6e5d754ca8\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+207            android:initOrder="100" />
+207-->[com.google.firebase:firebase-common:20.0.0] C:\Users\82140\.gradle\caches\transforms-3\1b61674ae02005112346fa6e5d754ca8\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+208
+209        <activity
+209-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\82140\.gradle\caches\transforms-3\71d98cda554c57be3c08b72d645a74f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+210            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+210-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\82140\.gradle\caches\transforms-3\71d98cda554c57be3c08b72d645a74f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+211            android:exported="false"
+211-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\82140\.gradle\caches\transforms-3\71d98cda554c57be3c08b72d645a74f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+212            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+212-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\82140\.gradle\caches\transforms-3\71d98cda554c57be3c08b72d645a74f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+213
+214        <receiver
+214-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:29:9-33:20
+215            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+215-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:30:13-85
+216            android:enabled="true"
+216-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:31:13-35
+217            android:exported="false" >
+217-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:32:13-37
+218        </receiver>
+219
+220        <service
+220-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:35:9-38:40
+221            android:name="com.google.android.gms.measurement.AppMeasurementService"
+221-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:36:13-84
+222            android:enabled="true"
+222-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:37:13-35
+223            android:exported="false" />
+223-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:38:13-37
+224        <service
+224-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:39:9-43:72
+225            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+225-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:40:13-87
+226            android:enabled="true"
+226-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:41:13-35
+227            android:exported="false"
+227-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:42:13-37
+228            android:permission="android.permission.BIND_JOB_SERVICE" />
+228-->[com.google.android.gms:play-services-measurement:20.0.1] C:\Users\82140\.gradle\caches\transforms-3\0d531fb7d40276984b74d49ae8b34dbd\transformed\jetified-play-services-measurement-20.0.1\AndroidManifest.xml:43:13-69
+229
+230        <meta-data
+230-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\82140\.gradle\caches\transforms-3\7492b9bf76142f48445b76b79c1f5fe5\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+231            android:name="com.google.android.gms.version"
+231-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\82140\.gradle\caches\transforms-3\7492b9bf76142f48445b76b79c1f5fe5\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+232            android:value="@integer/google_play_services_version" />
+232-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\82140\.gradle\caches\transforms-3\7492b9bf76142f48445b76b79c1f5fe5\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+233
+234        <activity
+234-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:47:9-53:63
+235            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+235-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:48:13-74
+236            android:clearTaskOnLaunch="true"
+236-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:49:13-45
+237            android:screenOrientation="sensorLandscape"
+237-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:50:13-56
+238            android:stateNotNeeded="true"
+238-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:51:13-42
+239            android:theme="@style/zxing_CaptureTheme"
+239-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:52:13-54
+240            android:windowSoftInputMode="stateAlwaysHidden" />
+240-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\82140\.gradle\caches\transforms-3\f90a9a2ec145a7c354574a09b34c169d\transformed\jetified-zxing-android-embedded-4.2.0\AndroidManifest.xml:53:13-60
+241    </application>
+242
+243</manifest>

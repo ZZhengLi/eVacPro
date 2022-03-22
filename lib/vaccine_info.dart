@@ -114,6 +114,7 @@ class _VaccineInfoState extends State<VaccineInfo> {
                                 ],
                               ),
                               TextFormField(
+                                keyboardType: TextInputType.number,
                                 controller:
                                     TextEditingController(text: widget.dose),
                                 validator: RequiredValidator(
@@ -175,11 +176,11 @@ class _VaccineInfoState extends State<VaccineInfo> {
                               EasyLoading.showError(e.toString());
                             }
                             EasyLoading.dismiss();
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return VaccineQR(data: _qrData);
+                            }));
                           }
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) {
-                            return VaccineQR(data: _qrData);
-                          }));
                         },
                         child: const Text("Create")),
                   ],

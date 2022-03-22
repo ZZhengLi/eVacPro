@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:vaccination_pro/check_appointment.dart';
-import 'package:vaccination_pro/vaccine_data.dart';
 import 'package:vaccination_pro/vaccine_info.dart';
 
 class PatientInfo extends StatelessWidget {
@@ -14,6 +13,8 @@ class PatientInfo extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
     var user = FirebaseFirestore.instance.doc("Users/$uid");
+    bool exist = false;
+
     return StreamBuilder(
         stream: user.snapshots(),
         builder: (context, AsyncSnapshot snapshot) {
@@ -80,9 +81,7 @@ class PatientInfo extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.all(0.02 * width),
                         width: 0.8 * width,
-                        decoration: BoxDecoration(
-                            // border: Border.all(color: Colors.black),
-                            color: Colors.grey[300]),
+                        decoration: BoxDecoration(color: Colors.grey[300]),
                         child: Column(
                           children: [
                             CircleAvatar(
@@ -103,71 +102,90 @@ class PatientInfo extends StatelessWidget {
                                     data["verification"] == false
                                         ? SizedBox(
                                             height: 20,
-                                            width: 70,
+                                            width: 80,
                                             child: ElevatedButton(
                                                 style: ButtonStyle(
                                                     backgroundColor:
                                                         MaterialStateProperty
                                                             .all(Colors.red)),
                                                 onPressed: () async {
-                                                  showDialog(
-                                                    context: context,
-                                                    builder:
-                                                        (BuildContext context) {
-                                                      return AlertDialog(
-                                                        title: const Text(
-                                                          'Confirm',
-                                                        ),
-                                                        content: const Text(
-                                                          'Are you sure to verify this user?',
-                                                        ),
-                                                        actions: <Widget>[
-                                                          ElevatedButton(
-                                                            child: const Text(
-                                                                'YES'),
-                                                            onPressed:
-                                                                () async {
-                                                              Navigator.of(
-                                                                      context)
-                                                                  .pop();
-                                                              EasyLoading.show(
-                                                                  maskType:
-                                                                      EasyLoadingMaskType
-                                                                          .black);
-                                                              await FirebaseFirestore
-                                                                  .instance
-                                                                  .doc(
-                                                                      "Users/${data["uid"]}")
-                                                                  .update({
-                                                                "verification":
-                                                                    true
-                                                              });
-                                                              EasyLoading
-                                                                  .showSuccess(
-                                                                      "Verified");
-                                                              EasyLoading
-                                                                  .dismiss();
-                                                            },
-                                                          ),
-                                                          ElevatedButton(
-                                                            child: const Text(
-                                                                'NO'),
-                                                            onPressed: () {
-                                                              Navigator.of(
-                                                                      context)
-                                                                  .pop();
-                                                            },
-                                                          ),
-                                                        ],
-                                                        elevation: 20,
-                                                        shape: RoundedRectangleBorder(
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        10)),
-                                                      );
-                                                    },
-                                                  );
+                                                  await FirebaseFirestore
+                                                      .instance
+                                                      .collection("Users")
+                                                      .where("verification",
+                                                          isEqualTo: true)
+                                                      .where("id",
+                                                          isEqualTo: data["id"])
+                                                      .get()
+                                                      .then((value) {
+                                                    if (value.docs.isNotEmpty) {
+                                                      exist = true;
+                                                    }
+                                                  });
+                                                  !exist
+                                                      ? showDialog(
+                                                          context: context,
+                                                          builder: (BuildContext
+                                                              context) {
+                                                            return AlertDialog(
+                                                              title: const Text(
+                                                                'Confirm',
+                                                              ),
+                                                              content:
+                                                                  const Text(
+                                                                'Are you sure to verify this user?',
+                                                              ),
+                                                              actions: <Widget>[
+                                                                ElevatedButton(
+                                                                  child:
+                                                                      const Text(
+                                                                          'YES'),
+                                                                  onPressed:
+                                                                      () async {
+                                                                    Navigator.of(
+                                                                            context)
+                                                                        .pop();
+                                                                    EasyLoading.show(
+                                                                        maskType:
+                                                                            EasyLoadingMaskType.black);
+                                                                    await FirebaseFirestore
+                                                                        .instance
+                                                                        .doc(
+                                                                            "Users/${data["uid"]}")
+                                                                        .update({
+                                                                      "verification":
+                                                                          true
+                                                                    });
+                                                                    EasyLoading
+                                                                        .showSuccess(
+                                                                            "Verified");
+                                                                    EasyLoading
+                                                                        .dismiss();
+                                                                  },
+                                                                ),
+                                                                ElevatedButton(
+                                                                  child:
+                                                                      const Text(
+                                                                          'NO'),
+                                                                  onPressed:
+                                                                      () {
+                                                                    Navigator.of(
+                                                                            context)
+                                                                        .pop();
+                                                                  },
+                                                                ),
+                                                              ],
+                                                              elevation: 20,
+                                                              shape: RoundedRectangleBorder(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              10)),
+                                                            );
+                                                          },
+                                                        )
+                                                      : EasyLoading.showError(
+                                                          "User already existed");
                                                 },
                                                 child: const Text("Verify")),
                                           )
@@ -175,7 +193,12 @@ class PatientInfo extends StatelessWidget {
                                     infoFormat(width, height, "Name:",
                                         data["displayName"]),
                                     infoFormat(
-                                        width, height, "ID Card:", data["id"]),
+                                        width,
+                                        height,
+                                        data["nationality"] == "Thai"
+                                            ? "ID Card:"
+                                            : "Passport:",
+                                        data["id"]),
                                     infoFormat(width, height, "Gender:",
                                         data["gender"]),
                                     infoFormat(width, height, "DOB:",

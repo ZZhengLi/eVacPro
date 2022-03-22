@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-he\\values-he.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\f90a9a2ec145a7c354574a09b34c169d\\transformed\\jetified-zxing-android-embedded-4.2.0\\res\\values-he\\values-he.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,111,161,296",
+                        "endColumns": "55,49,134,89",
+                        "endOffsets": "106,156,291,381"
+                    }
+                }
+            ]
+        }
+    ]
+}

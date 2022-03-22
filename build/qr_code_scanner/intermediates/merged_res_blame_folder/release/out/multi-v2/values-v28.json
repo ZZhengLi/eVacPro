@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\values-v28\\values-v28.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\f5244bbd805202ceededffdc728f0c47\\transformed\\appcompat-1.3.0\\res\\values-v28\\values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,447",
+                        "endLines": "2,3,7,11",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,442,684"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v28\\values-v28.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\f5244bbd805202ceededffdc728f0c47\\transformed\\appcompat-1.3.0\\res\\values-v28\\values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,447",
+                        "endLines": "2,3,7,11",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,442,684"
+                    }
+                }
+            ]
+        }
+    ]
+}

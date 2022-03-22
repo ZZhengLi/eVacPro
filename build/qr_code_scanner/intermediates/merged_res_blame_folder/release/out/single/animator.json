@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_open_enter.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\d13b6f8e1037b5728be8976db3712ace\\transformed\\fragment-1.3.4\\res\\animator\\fragment_open_enter.xml"
+    },
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_open_exit.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\d13b6f8e1037b5728be8976db3712ace\\transformed\\fragment-1.3.4\\res\\animator\\fragment_open_exit.xml"
+    },
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_close_enter.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\d13b6f8e1037b5728be8976db3712ace\\transformed\\fragment-1.3.4\\res\\animator\\fragment_close_enter.xml"
+    },
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_fade_exit.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\d13b6f8e1037b5728be8976db3712ace\\transformed\\fragment-1.3.4\\res\\animator\\fragment_fade_exit.xml"
+    },
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_fade_enter.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\d13b6f8e1037b5728be8976db3712ace\\transformed\\fragment-1.3.4\\res\\animator\\fragment_fade_enter.xml"
+    },
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\animator\\fragment_close_exit.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\d13b6f8e1037b5728be8976db3712ace\\transformed\\fragment-1.3.4\\res\\animator\\fragment_close_exit.xml"
+    }
+]

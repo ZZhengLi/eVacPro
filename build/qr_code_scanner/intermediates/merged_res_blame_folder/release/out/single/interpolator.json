@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\interpolator\\btn_radio_to_off_mtrl_animation_interpolator_0.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\f5244bbd805202ceededffdc728f0c47\\transformed\\appcompat-1.3.0\\res\\interpolator\\btn_radio_to_off_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\interpolator\\btn_radio_to_on_mtrl_animation_interpolator_0.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\f5244bbd805202ceededffdc728f0c47\\transformed\\appcompat-1.3.0\\res\\interpolator\\btn_radio_to_on_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\interpolator\\btn_checkbox_checked_mtrl_animation_interpolator_1.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\f5244bbd805202ceededffdc728f0c47\\transformed\\appcompat-1.3.0\\res\\interpolator\\btn_checkbox_checked_mtrl_animation_interpolator_1.xml"
+    },
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\interpolator\\btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\f5244bbd805202ceededffdc728f0c47\\transformed\\appcompat-1.3.0\\res\\interpolator\\btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\interpolator\\btn_checkbox_checked_mtrl_animation_interpolator_0.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\f5244bbd805202ceededffdc728f0c47\\transformed\\appcompat-1.3.0\\res\\interpolator\\btn_checkbox_checked_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\interpolator\\btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\f5244bbd805202ceededffdc728f0c47\\transformed\\appcompat-1.3.0\\res\\interpolator\\btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml"
+    },
+    {
+        "merged": "D:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\qr_code_scanner\\intermediates\\merged_res\\release\\interpolator\\fast_out_slow_in.xml",
+        "source": "C:\\Users\\82140\\.gradle\\caches\\transforms-3\\f5244bbd805202ceededffdc728f0c47\\transformed\\appcompat-1.3.0\\res\\interpolator\\fast_out_slow_in.xml"
+    }
+]

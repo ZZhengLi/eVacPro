@@ -30,7 +30,7 @@ class SignIn extends StatelessWidget {
                       color: Colors.white,
                       height: 50,
                       semanticsLabel: 'vaccines icon'),
-                  const Text("Vaccinations Pro",
+                  const Text("eVac Pro",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 25,

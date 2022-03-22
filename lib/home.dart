@@ -31,7 +31,7 @@ class Home extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        "Vaccinations Pro",
+                        "eVac Pro",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 24,
@@ -76,97 +76,6 @@ class Home extends StatelessWidget {
                               ),
                             ),
                           ),
-                          // Card(
-                          //   shape: RoundedRectangleBorder(
-                          //     borderRadius: BorderRadius.circular(20),
-                          //   ),
-                          //   child: InkWell(
-                          //     onTap: () {
-                          //       EasyLoading.show(
-                          //           maskType: EasyLoadingMaskType.black);
-                          //       Navigator.push(
-                          //         context,
-                          //         MaterialPageRoute(
-                          //           builder: (context) => PatientList(),
-                          //         ),
-                          //       );
-                          //     },
-                          //     splashColor: Colors.blue,
-                          //     child: Center(
-                          //       child: Column(
-                          //         mainAxisAlignment: MainAxisAlignment.center,
-                          //         children: const [
-                          //           Icon(
-                          //             Icons.library_books,
-                          //             size: 70,
-                          //             color: Colors.blue,
-                          //           ),
-                          //           Text("Patient List"),
-                          //         ],
-                          //       ),
-                          //     ),
-                          //   ),
-                          // ),
-                          // Card(
-                          //   shape: RoundedRectangleBorder(
-                          //     borderRadius: BorderRadius.circular(20),
-                          //   ),
-                          //   child: InkWell(
-                          //     onTap: () {
-                          //       EasyLoading.show(
-                          //           maskType: EasyLoadingMaskType.black);
-                          //       Navigator.push(
-                          //         context,
-                          //         MaterialPageRoute(
-                          //           builder: (context) => VaccineData(),
-                          //         ),
-                          //       );
-                          //     },
-                          //     splashColor: Colors.blue,
-                          //     child: Center(
-                          //       child: Column(
-                          //         mainAxisAlignment: MainAxisAlignment.center,
-                          //         children: [
-                          //           SvgPicture.asset(
-                          //               "assets/icons/vaccines.svg",
-                          //               color: Colors.blue,
-                          //               height: 70,
-                          //               semanticsLabel: 'vaccines icon'),
-                          //           const Text("Vaccine Data"),
-                          //         ],
-                          //       ),
-                          //     ),
-                          //   ),
-                          // ),
-                          // Card(
-                          //   shape: RoundedRectangleBorder(
-                          //     borderRadius: BorderRadius.circular(20),
-                          //   ),
-                          //   child: InkWell(
-                          //     onTap: () {
-                          //       Navigator.push(
-                          //         context,
-                          //         MaterialPageRoute(
-                          //           builder: (context) => VaccineQrCode(),
-                          //         ),
-                          //       );
-                          //     },
-                          //     splashColor: Colors.blue,
-                          //     child: Center(
-                          //       child: Column(
-                          //         mainAxisAlignment: MainAxisAlignment.center,
-                          //         children: const [
-                          //           Icon(
-                          //             Icons.qr_code,
-                          //             size: 70,
-                          //             color: Colors.blue,
-                          //           ),
-                          //           Text("Vaccine QrCode"),
-                          //         ],
-                          //       ),
-                          //     ),
-                          //   ),
-                          // ),
                           Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),

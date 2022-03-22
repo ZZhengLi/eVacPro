@@ -1,0 +1,4 @@
+#Mon Mar 21 19:06:28 CST 2022
+base.0=D\:\\1A\\University\\Year 2021-2\\Senior Project\\vaccination_pro\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
